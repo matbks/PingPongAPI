@@ -4,8 +4,9 @@ const app = express();
 const port = 3200; 
 
 // Endpoint que responde com "pong" quando recebe um "ping"
-app.get('/ping', (req, res) => {
-    res.send('pong');
+app.post('/ping', (req, res) => {
+    response = '{ "data" : "pong" }'
+    res.send(response);
 });
 
 app.listen(port, () => {
