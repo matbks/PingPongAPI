@@ -1,7 +1,7 @@
 const express = require('express');
 const axios = require('axios');
 const app = express();
-const port = 3000; 
+const port = 4000; 
 
 // Endpoint que responde com "pong" quando recebe um "ping"
 app.post('/ping', (req, res) => {
